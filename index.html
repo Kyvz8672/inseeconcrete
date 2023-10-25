@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Quizs</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--ใส่ link สำหรับ google form ที่ href-->
+    <div class="hidden">
+      <ul id="links" class="hidden">
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf3AbwASEOW1ar84BNdaopwgjHu_C60ofBgyvqm0fqGXkJAFg/viewform"
+            data-number="1" 
+            target="_blank"
+            >Test 1</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdXwcXkMQpy5A5DZ0DTyYrhoEY3vrdy1qx3rixAmXisVtJ34w/viewform"
+            data-number="2" 
+            target="_blank"
+            >Test 2</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScRP77tr75KKPESTUDxI8x-9B43s7DhUiv_2xQlapYVCeAZqg/viewform"
+            data-number="3" 
+            arget="_blank"
+            >Test 3</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfj84bSM8QNftB0wa0fu8WxNpN6qzNuEUALEj4mnyYyoRZ92g/viewform"
+            data-number="4" 
+            target="_blank"
+            >Test 4</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeIIo42rsDxagbQt_GjJ06Fw_EF5n_VmxUJdVkO4gAaiSStag/viewform"
+            data-number="5" 
+            target="_blank"
+            >Test 5</a
+          >
+        </li>
+      </ul>
+    </div>
+  </head>
+  <body>
+    <nav
+      class="ki-sidebar ki-red ki-collapse ki-top ki-large ki-padding"
+      style="z-index: 3; width: 300px; font-weight: bold"
+      id="mySidebar"
+    >
+      <br />
+      <a
+        href="javascript:void(0)"
+        onclick="ki_close()"
+        class="ki-button ki-hide-large ki-display-topleft"
+        style="width: 100%; font-size: 22px"
+        >Close</a
+      >
+      <div class="ki-container">
+        <h3 class="ki-padding-64">
+          <b>Lessons<br />&<br />Quiz</b>
+        </h3>
+      </div>
+      <div class="ki-bar-block">
+        <a
+          href="#random"
+          onclick="ki_close()"
+          class="ki-bar-item ki-button ki-hover-white"
+          >สุ่มแบบทดสอบ</a
+        >
+        <a
+          href="#L1"
+          onclick="ki_close()"
+          class="ki-bar-item ki-button ki-hover-white"
+          >บทเรียนที่ 1: Slump Test</a
+        >
+        <a
+          href="#L2"
+          onclick="ki_close()"
+          class="ki-bar-item ki-button ki-hover-white"
+          >บทเรียนที่ 2: การเก็บตัวอย่างทรงลูกบาศก์</a
+        >
+        <a
+          href="#L3"
+          onclick="ki_close()"
+          class="ki-bar-item ki-button ki-hover-white"
+          >บทเรียนที่ 3: การเก็บตัวอย่างทรงกระบอก</a
+        >
+        <a
+          href="#L4"
+          onclick="ki_close()"
+          class="ki-bar-item ki-button ki-hover-white"
+          >บทเรียนที่ 4: Compressive Strenght Test</a
+        >
+        <a
+          href="#L5"
+          onclick="ki_close()"
+          class="ki-bar-item ki-button ki-hover-white"
+          >บทเรียนที่ 5: Moisture Checking</a
+        >
+      </div>
+    </nav>
+
+    <header
+      class="ki-container ki-top ki-hide-large ki-red ki-xlarge ki-padding"
+    >
+      <a
+        href="javascript:void(0)"
+        class="ki-button ki-red ki-margin-right"
+        onclick="ki_open()"
+        >☰</a
+      >
+      <span>Lesson & Quizs</span>
+    </header>
+
+    <div
+      class="ki-overlay ki-hide-large"
+      onclick="ki_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <div class="ki-main" style="margin-left: 340px; margin-right: 40px">
+      <div class="ki-container" style="margin-top: 80px" id="random">
+        <h1 class="ki-jumbo"><b>สุ่มแบบทดสอบ</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="ki-round" />
+      </div>
+      <div>
+        <button onclick="generateRandomNumber()">สุ่มแบบทดสอบ</button>
+      </div>
+<!--ใส่ชื่อไฟล์ Video ที่ src-->
+      <div class="ki-container" style="margin-top: 80px" id="L1">
+        <h1 class="ki-jumbo"><b>บทเรียนที่ 1: Slump Test</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="ki-round" />
+      </div>
+      <div class="ki-container">
+        <iframe src="https://drive.google.com/file/d/1FjDGm6x9CwCqC5WpkbLOTmfVBu4t0Q5F/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="ki-container" style="margin-top: 80px" id="L2">
+        <h1 class="ki-jumbo"><b>บทเรียนที่ 2: การเก็บตัวอย่างทรงลูกบาศก์</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="ki-round" />
+      </div>
+      <div class="ki-container">
+        <iframe src="https://drive.google.com/file/d/1QMDtBSBdg2bc44oY4AZpddNYOG6gYU20/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="ki-container" style="margin-top: 80px" id="L3">
+        <h1 class="ki-jumbo"><b>บทเรียนที่ 3: การเก็บตัวอย่างทรงกระบอก</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="ki-round" />
+      </div>
+      <div class="ki-container">
+        <iframe src="https://drive.google.com/file/d/1Lp3NFXc1TEPT_OHDl4-rN2LKlkbhkB1w/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="ki-container" style="margin-top: 80px" id="L4">
+        <h1 class="ki-jumbo"><b>บทเรียนที่ 4: Compressive Strenght Test</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="ki-round" />
+      </div>
+      <div class="ki-container">
+        
+          <iframe src="https://drive.google.com/file/d/1sB_sGpKwAaKeuD1SBdKHBpihFUTr-mGj/preview" width="640" height="480" allow="autoplay"></iframe>
+        
+      </div>
+      <div class="ki-container" style="margin-top: 80px" id="L5">
+        <h1 class="ki-jumbo"><b>บทเรียนที่ 5: Moisture Checking</b></h1>
+        <hr style="width: 50px; border: 5px solid red" class="ki-round" />
+      </div>
+      <div class="ki-container">
+        <iframe src="https://drive.google.com/file/d/1h7vNqhtzCi0yY7zIVkTWlkT81-trE2Mt/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function ki_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function ki_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      function generateRandomNumber() {
+        // Generate a random number between 1 and the number of links in the list
+        var randomNumber =
+          Math.floor(
+            Math.random() * document.querySelectorAll("#links li").length
+          ) + 1;
+
+        // Find the link in the list that has the corresponding `data-number` attribute
+        var link = document.querySelector(
+          "#links li a[data-number='" + randomNumber + "']"
+        );
+
+        // Redirect the user to the link
+        window.location.href = link.getAttribute("href");
+      }
+    </script>
+  </body>
+</html>
